@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>注册表单</title>
+</head>
+
+<body>
+
+<form action="/info" method="post">
+
+    <fieldset style="width:600px;margin:0 auto" >
+
+        <table width="600" border="1" align="center">
+            <tr>
+                <td style="text-align:left">姓名：</td>
+                <td colspan="3"><input type="text" name="consumer" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:left">性别：</td>
+                <td colspan="1">
+                    <input type="radio" name="sex" value="male"/>男
+                    <input type="radio" name="sex" value="female"/>女
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left">出生日期</td>
+                <td colspan="1">
+                    <input type="text" name="date" value="年/月/日"/>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left">技术专长：</td>
+                <td colspan="1">
+                    <input type="checkbox" name=".net" />.NET
+                    <input type="checkbox" name="java" />Java
+                    <input type="checkbox" name="c++" />C++
+                    <input type="checkbox" name="c" />C
+                    <input type="checkbox" name="php" />PHP
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left"><nobr>意向工作地点:</nobr></td>
+                <td>
+                    <select name="address">
+                        <option value="beijing">北京</option>
+                        <option value="guangzhou">广州</option>
+                        <option value="shanghai">上海</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left">自我介绍：</td>
+                <td colspan="1">
+                    <textarea name="comment" rows="10" cols="80"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div align="center">
+                        <input type="image" name="submit" height="64" width="64" src="submit.png">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <legend>注册信息</legend>
+    </fieldset>
+</form>
+
+</body>
+</html>
